@@ -1,0 +1,145 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 700;
+}
+
+#content {
+    min-height: calc(100vh - 90px);
+    width: 100vw;
+}
+
+.custom-slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/main-bg1.jpg') no-repeat center center;
+    width: 100%;
+    height: 50rem;
+}
+
+.custom-slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/main-bg2.jpg') no-repeat center center;
+    width: 100%;
+    height: 50rem;
+}
+
+.custom-slide3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/main-bg3.jpg') no-repeat center center;
+    width: 100%;
+    height: 50rem;
+}
+
+.custom-card {
+    margin: 4rem auto;
+    width: 25rem;
+    border-radius: 5px;
+}
+
+/* section {
+    height: 100vh;
+} */
+
+.custom-login-form {
+    width: fit-content;
+    padding: 2rem;
+    margin: 10rem auto;
+}
+
+input {
+    margin: 1rem;
+    width: 50vw;
+}
+
+.custom-submit {
+    margin: 1rem;
+    width: 50vw;
+    font-size: 1.5rem;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page,
+ the section does not get lost behind the header*/
+#cameras:before,
+#watches:before,
+#shirts:before {
+    display: block;
+    content: ' ';
+    margin-top: -85px;
+    height: 85px;
+    visibility: hidden;
+}
+
+footer {
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.custom-table,
+.custom-table tr {
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+.custom-table {
+    width: 90%;
+    margin-top: 5rem;
+    height: fit-content;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 2rem;
+}
+
+.custom-table tr:hover {
+    background-color: rgb(99, 250, 99);
+}
+
+.custom-total {
+    width: 40%;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.red {
+    color: red;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        text-align: left;
+    }
+    .custom-total {
+        width: 70%;
+    }
+}
